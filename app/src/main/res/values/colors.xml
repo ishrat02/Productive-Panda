@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep">#AFA895</color>
+    <color name="deeep">#CEB165</color>
+    <color name="black">#FF000000</color>
+    <color name="brown">#877644</color>
+    <color name="Darkbrown">#5F5331</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="newcol">#97907C</color>
+    <color name="purple_200">#7B5AA2</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="lavender">#8692f7</color>
+    <color name="colorPrimary">#0277bd</color>
+
+    <color name="colorPrimaryDark">#004c8c</color>
+    <color name="colorAccent">#0277bd</color>
+    <color name="textColor">#121212</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yellow">#BF9C47</color>
+    <color name="green1">#4A7872</color>
+    <color name="pink">#CA92A4</color>
+    <color name="darkPink">#A01B46</color>
+    <color name="pink2">#D9BAC4</color>
+    <color name="red2">#DB014B</color>
+    <color name="lightGray">#c1c1c1</color>
+    <color name="orange">#E04A1B</color>
+    <color name="darkred">#2B3883</color>
+    <color name="min_blue">#96e8f3</color>
+    <color name="max_blue">#30d9ef</color>
+
+</resources>

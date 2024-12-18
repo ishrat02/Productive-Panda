@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Darkbrown"
+    android:id="@+id/dialogForgot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialogBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/forgotTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Flash Card"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:background="@color/Darkbrown"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/baseline_add_box_24"
+            android:drawablePadding="8dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Question View -->
+        <TextView
+            android:id="@+id/questionView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Question:"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/Darkbrown"
+            app:layout_constraintTop_toBottomOf="@id/forgotTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Question Input -->
+        <EditText
+            android:id="@+id/questionBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/brown"
+            android:maxLines="1"
+            app:layout_constraintTop_toBottomOf="@id/questionView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Question Details -->
+        <TextView
+            android:id="@+id/question_det"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Answer:"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/Darkbrown"
+            app:layout_constraintTop_toBottomOf="@id/questionBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Answer Input -->
+        <EditText
+            android:id="@+id/answerBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/brown"
+            android:maxLines="1"
+            app:layout_constraintTop_toBottomOf="@id/question_det"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:backgroundTint="@color/Darkbrown"
+            app:layout_constraintTop_toBottomOf="@id/answerBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCreate" />
+
+        <!-- Create Button -->
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:backgroundTint="@color/Darkbrown"
+            app:layout_constraintTop_toBottomOf="@id/answerBox"
+            app:layout_constraintStart_toEndOf="@id/btnCancel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_8"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#00000000">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:contentDescription="Back Button"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_back_black" />
+
+            <TextView
+                android:id="@+id/activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Edit Profile"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Main Content Section -->
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/profile_image_view"
+                android:background="@drawable/circle_purple"
+                android:src="@drawable/baseline_person_24_black"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="40dp" />
+
+            <EditText
+                android:drawableLeft="@drawable/baseline_person_24_purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext_purple"
+                android:elevation="5dp"
+                android:id="@+id/profile_name" />
+
+            <EditText
+                android:drawableLeft="@drawable/baseline_person_24_purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext_purple"
+                android:elevation="5dp"
+                android:id="@+id/profile_username" />
+
+            <TextView
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext_purple"
+                android:elevation="5dp"
+                android:id="@+id/profile_email" />
+
+            <EditText
+                android:drawableLeft="@drawable/baseline_person_outline_24_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:hint="Gender (Male/Female)"
+                android:inputType="text"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edittext_purple"
+                android:elevation="5dp"
+                android:id="@+id/profile_gender" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:id="@+id/profile_update_btn"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_200"
+                    android:layout_margin="5dp" />
+
+                <ProgressBar
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/purple_200"
+                    android:layout_gravity="center"
+                    android:id="@+id/profile_progress_bar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

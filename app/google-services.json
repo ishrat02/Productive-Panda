@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "241082030379",
+    "project_id": "sign-in-sign-up-firebase-351ce",
+    "storage_bucket": "sign-in-sign-up-firebase-351ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241082030379:android:1dd688233ef81a26b24d6e",
+        "android_client_info": {
+          "package_name": "com.example.adminpanel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0f4wogLvLzLYPbJ8YAfhtdh-P69oPTOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
